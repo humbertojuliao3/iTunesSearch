@@ -18,7 +18,7 @@
     NSMutableArray *sec2movie;
     NSMutableArray *sec3tv;
     NSMutableArray *sec4podcast;
-//    NSMutableArray *sec5itens;
+
     
 }
 
@@ -120,6 +120,7 @@
     [self.tableview reloadData];
     [searchBar resignFirstResponder];
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -213,11 +214,6 @@
         default:
             break;
     }
-    
-    
-//    [celula.nome setText:filme.nome];
-//    [celula.tipo setText:NSLocalizedString(filme.tipo,@"seta o tipo para um valor comum")];
-//    [celula.genero setText:filme.genero];
     
     return celula;
 }

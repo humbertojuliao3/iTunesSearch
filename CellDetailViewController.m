@@ -50,12 +50,7 @@
     genero.text = [resp objectAtIndex:2];
     pais.text = [resp objectAtIndex:3];
     tipo.text = [resp objectAtIndex:4];
-//    NSLog(titulo.text);
-//    NSLog(artista.text);
-//    NSLog(genero.text);
-//    NSLog(pais.text);
-//    NSLog(tipo.text);
-//    [self reloadInputViews];
+
     [self.imagem setImage: [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[resp objectAtIndex:5]]]]];
 
 }
