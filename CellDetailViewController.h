@@ -12,11 +12,11 @@
 @property (nonatomic,strong) NSArray* item;
 @property (weak, nonatomic) IBOutlet UILabel *titulo;
 @property (weak, nonatomic) IBOutlet UILabel *artista;
-@property (weak, nonatomic) IBOutlet UILabel *duracao;
+
 @property (weak, nonatomic) IBOutlet UILabel *genero;
 @property (weak, nonatomic) IBOutlet UILabel *pais;
 @property (weak, nonatomic) IBOutlet UILabel *tipo;
-//@property (weak, nonatomic) IBOutlet UIImageView *imagem;
+@property (weak, nonatomic) IBOutlet UIImageView *imagem;
 
 
 @end

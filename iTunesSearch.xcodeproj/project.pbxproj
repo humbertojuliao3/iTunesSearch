@@ -38,11 +38,11 @@
 		276E70D81AB085360042EB9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		276E70D91AB085720042EB9C /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
 		276E70DA1AB085830042EB9C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
-		5C8D0F561AB36C9E00216BF3 /* CellDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellDetailViewController.h; sourceTree = "<group>"; };
-		5C8D0F571AB36C9E00216BF3 /* CellDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellDetailViewController.m; sourceTree = "<group>"; };
-		5C8D0F581AB36C9E00216BF3 /* CellDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellDetailViewController.xib; sourceTree = "<group>"; };
-		5C8D0F5B1AB36FBA00216BF3 /* SingDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingDetail.h; sourceTree = "<group>"; };
-		5C8D0F5C1AB36FBA00216BF3 /* SingDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingDetail.m; sourceTree = "<group>"; };
+		5C8D0F561AB36C9E00216BF3 /* CellDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CellDetailViewController.h; path = ../CellDetailViewController.h; sourceTree = "<group>"; };
+		5C8D0F571AB36C9E00216BF3 /* CellDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CellDetailViewController.m; path = ../CellDetailViewController.m; sourceTree = "<group>"; };
+		5C8D0F581AB36C9E00216BF3 /* CellDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CellDetailViewController.xib; path = ../CellDetailViewController.xib; sourceTree = "<group>"; };
+		5C8D0F5B1AB36FBA00216BF3 /* SingDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SingDetail.h; path = ../SingDetail.h; sourceTree = "<group>"; };
+		5C8D0F5C1AB36FBA00216BF3 /* SingDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SingDetail.m; path = ../SingDetail.m; sourceTree = "<group>"; };
 		92C21CB01AAE757A0052ABE6 /* iTunesSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C21CB41AAE757A0052ABE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92C21CB51AAE757A0052ABE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -85,11 +85,6 @@
 		92C21CA71AAE757A0052ABE6 = {
 			isa = PBXGroup;
 			children = (
-				5C8D0F5B1AB36FBA00216BF3 /* SingDetail.h */,
-				5C8D0F5C1AB36FBA00216BF3 /* SingDetail.m */,
-				5C8D0F561AB36C9E00216BF3 /* CellDetailViewController.h */,
-				5C8D0F571AB36C9E00216BF3 /* CellDetailViewController.m */,
-				5C8D0F581AB36C9E00216BF3 /* CellDetailViewController.xib */,
 				92C21CB21AAE757A0052ABE6 /* iTunesSearch */,
 				92C21CCC1AAE757A0052ABE6 /* iTunesSearchTests */,
 				92C21CB11AAE757A0052ABE6 /* Products */,
@@ -111,6 +106,11 @@
 				92C21CE31AAE76AA0052ABE6 /* Celulas */,
 				92C21CE91AAE859A0052ABE6 /* Entidades */,
 				92C21CB71AAE757A0052ABE6 /* AppDelegate.h */,
+				5C8D0F5B1AB36FBA00216BF3 /* SingDetail.h */,
+				5C8D0F5C1AB36FBA00216BF3 /* SingDetail.m */,
+				5C8D0F561AB36C9E00216BF3 /* CellDetailViewController.h */,
+				5C8D0F571AB36C9E00216BF3 /* CellDetailViewController.m */,
+				5C8D0F581AB36C9E00216BF3 /* CellDetailViewController.xib */,
 				92C21CB81AAE757A0052ABE6 /* AppDelegate.m */,
 				92C21CBA1AAE757A0052ABE6 /* TableViewController.h */,
 				92C21CBB1AAE757A0052ABE6 /* TableViewController.m */,

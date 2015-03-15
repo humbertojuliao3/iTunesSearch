@@ -15,7 +15,7 @@
 @end
 
 @implementation CellDetailViewController
-@synthesize titulo,artista,duracao,genero,pais,tipo;
+@synthesize titulo,artista,genero,pais,tipo;
 /*
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -42,16 +42,21 @@
 }
 */
 -(void)viewWillAppear:(BOOL)animated{
-    [super viewWillAppear:animated];
+    
     NSArray*resp=self.item;
     
-    [titulo setText:[resp objectAtIndex:0]];
+    titulo.text = [resp objectAtIndex:0];
     artista.text = [resp objectAtIndex:1];
-    duracao.text = [resp objectAtIndex:2];
-    genero.text = [resp objectAtIndex:3];
-    pais.text = [resp objectAtIndex:4];
-    tipo.text = [resp objectAtIndex:5];
-    //[self.imagem setImage: [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:item.imagem]]]];
+    genero.text = [resp objectAtIndex:2];
+    pais.text = [resp objectAtIndex:3];
+    tipo.text = [resp objectAtIndex:4];
+//    NSLog(titulo.text);
+//    NSLog(artista.text);
+//    NSLog(genero.text);
+//    NSLog(pais.text);
+//    NSLog(tipo.text);
+//    [self reloadInputViews];
+    [self.imagem setImage: [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[resp objectAtIndex:5]]]]];
 
 }
 

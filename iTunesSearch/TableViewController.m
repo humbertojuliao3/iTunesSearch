@@ -190,20 +190,25 @@
             celula.nome.text =NSLocalizedString([[midias objectAtIndex:indexPath.row] nome],);
             celula.tipo.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] tipo],);
             celula.genero.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] genero],);
+//            [celula.imagem setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[midias objectAtIndex:indexPath.row] imagemMini]]]]] ;
             break;
         case 1:
             celula.nome.text =NSLocalizedString( [[midias objectAtIndex:indexPath.row] nome],);
             celula.tipo.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] tipo],);
             celula.genero.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] genero],);
+//            [celula.imagem setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[midias objectAtIndex:indexPath.row] imagemMini]]]]] ;
             break;
         case 2:
             celula.nome.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] nome],);
             celula.tipo.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] tipo],);
-            celula.genero.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] genero],);            break;
+            celula.genero.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] genero],);
+//           [celula.imagem setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[midias objectAtIndex:indexPath.row] imagemMini]]]]] ;
+            break;
         case 3:
             celula.nome.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] nome],) ;
             celula.tipo.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] tipo],) ;
             celula.genero.text =NSLocalizedString( [[midias objectAtIndex:indexPath.row] genero],);
+//            [celula.imagem setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[midias objectAtIndex:indexPath.row] imagemMini]]]]] ;
             break;
         default:
             break;
@@ -219,7 +224,7 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     CellDetailViewController*detail =[[CellDetailViewController alloc] init];
     Filme*item=[midias objectAtIndex:indexPath.row];
-    NSArray*part=[[NSArray alloc] initWithObjects:item.nome,item.artista,item.duracao,item.genero,item.pais,item.tipo, nil];
+    NSArray*part=[[NSArray alloc] initWithObjects:item.nome,item.artista,item.genero,item.pais,item.tipo,item.imagem, nil];
     detail.item=part;
     [self.navigationController pushViewController:detail animated:YES];
     
