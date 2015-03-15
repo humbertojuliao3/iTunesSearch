@@ -20,15 +20,6 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="genero" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t36-g9-5oQ">
-                        <rect key="frame" x="152" y="36" width="148" height="20.5"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="148" id="d1Z-gE-XN3"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tipo" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Uv-8u-mju">
                         <rect key="frame" x="7" y="36" width="116" height="20.5"/>
                         <constraints>
@@ -41,6 +32,15 @@
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cgB-SO-7lC">
                         <rect key="frame" x="16" y="64" width="30" height="30"/>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="genero" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t36-g9-5oQ">
+                        <rect key="frame" x="152" y="36" width="148" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="148" id="d1Z-gE-XN3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
                     <constraint firstItem="UIA-JU-luV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Q1V-YW-Wh5"/>
@@ -54,7 +54,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="genero" destination="t36-g9-5oQ" id="vPt-fC-IuV"/>
-                <outlet property="imagem" destination="H2p-sc-9uM" id="FCz-RG-tTe"/>
+                <outlet property="imagem" destination="cgB-SO-7lC" id="ayE-Vz-uzE"/>
                 <outlet property="nome" destination="UIA-JU-luV" id="ubX-WX-gam"/>
                 <outlet property="tipo" destination="0Uv-8u-mju" id="VNH-un-91m"/>
             </connections>

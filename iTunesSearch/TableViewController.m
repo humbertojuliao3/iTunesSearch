@@ -191,25 +191,25 @@
             celula.nome.text =NSLocalizedString([[midias objectAtIndex:indexPath.row] nome],);
             celula.tipo.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] tipo],);
             celula.genero.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] genero],);
-//            [celula.imagem setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[midias objectAtIndex:indexPath.row] imagemMini]]]]] ;
+            [celula.imagem setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[midias objectAtIndex:indexPath.row] imagemMini]]]]] ;
             break;
         case 1:
             celula.nome.text =NSLocalizedString( [[midias objectAtIndex:indexPath.row] nome],);
             celula.tipo.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] tipo],);
             celula.genero.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] genero],);
-//            [celula.imagem setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[midias objectAtIndex:indexPath.row] imagemMini]]]]] ;
+            [celula.imagem setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[midias objectAtIndex:indexPath.row] imagemMini]]]]] ;
             break;
         case 2:
             celula.nome.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] nome],);
             celula.tipo.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] tipo],);
             celula.genero.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] genero],);
-//           [celula.imagem setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[midias objectAtIndex:indexPath.row] imagemMini]]]]] ;
+           [celula.imagem setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[midias objectAtIndex:indexPath.row] imagemMini]]]]] ;
             break;
         case 3:
             celula.nome.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] nome],) ;
             celula.tipo.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] tipo],) ;
             celula.genero.text =NSLocalizedString( [[midias objectAtIndex:indexPath.row] genero],);
-//            [celula.imagem setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[midias objectAtIndex:indexPath.row] imagemMini]]]]] ;
+            [celula.imagem setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[midias objectAtIndex:indexPath.row] imagemMini]]]]] ;
             break;
         default:
             break;
