@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		276E70D51AB085320042EB9C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 276E70D71AB085320042EB9C /* Localizable.strings */; };
+		5C8D0F591AB36C9E00216BF3 /* CellDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D0F571AB36C9E00216BF3 /* CellDetailViewController.m */; };
+		5C8D0F5A1AB36C9E00216BF3 /* CellDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5C8D0F581AB36C9E00216BF3 /* CellDetailViewController.xib */; };
+		5C8D0F5D1AB36FBA00216BF3 /* SingDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C8D0F5C1AB36FBA00216BF3 /* SingDetail.m */; };
 		92C21CB61AAE757A0052ABE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C21CB51AAE757A0052ABE6 /* main.m */; };
 		92C21CB91AAE757A0052ABE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C21CB81AAE757A0052ABE6 /* AppDelegate.m */; };
 		92C21CBC1AAE757A0052ABE6 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92C21CBB1AAE757A0052ABE6 /* TableViewController.m */; };
@@ -35,6 +38,11 @@
 		276E70D81AB085360042EB9C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		276E70D91AB085720042EB9C /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
 		276E70DA1AB085830042EB9C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5C8D0F561AB36C9E00216BF3 /* CellDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellDetailViewController.h; sourceTree = "<group>"; };
+		5C8D0F571AB36C9E00216BF3 /* CellDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellDetailViewController.m; sourceTree = "<group>"; };
+		5C8D0F581AB36C9E00216BF3 /* CellDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CellDetailViewController.xib; sourceTree = "<group>"; };
+		5C8D0F5B1AB36FBA00216BF3 /* SingDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingDetail.h; sourceTree = "<group>"; };
+		5C8D0F5C1AB36FBA00216BF3 /* SingDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingDetail.m; sourceTree = "<group>"; };
 		92C21CB01AAE757A0052ABE6 /* iTunesSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iTunesSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C21CB41AAE757A0052ABE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92C21CB51AAE757A0052ABE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -77,6 +85,11 @@
 		92C21CA71AAE757A0052ABE6 = {
 			isa = PBXGroup;
 			children = (
+				5C8D0F5B1AB36FBA00216BF3 /* SingDetail.h */,
+				5C8D0F5C1AB36FBA00216BF3 /* SingDetail.m */,
+				5C8D0F561AB36C9E00216BF3 /* CellDetailViewController.h */,
+				5C8D0F571AB36C9E00216BF3 /* CellDetailViewController.m */,
+				5C8D0F581AB36C9E00216BF3 /* CellDetailViewController.xib */,
 				92C21CB21AAE757A0052ABE6 /* iTunesSearch */,
 				92C21CCC1AAE757A0052ABE6 /* iTunesSearchTests */,
 				92C21CB11AAE757A0052ABE6 /* Products */,
@@ -239,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				276E70D51AB085320042EB9C /* Localizable.strings in Resources */,
+				5C8D0F5A1AB36C9E00216BF3 /* CellDetailViewController.xib in Resources */,
 				92C21CC11AAE757A0052ABE6 /* Images.xcassets in Resources */,
 				92C21CE21AAE76930052ABE6 /* TableViewCell.xib in Resources */,
 				92C21CDD1AAE75DC0052ABE6 /* TableView.xib in Resources */,
@@ -260,7 +274,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				92C21CBC1AAE757A0052ABE6 /* TableViewController.m in Sources */,
+				5C8D0F591AB36C9E00216BF3 /* CellDetailViewController.m in Sources */,
 				92C21CDB1AAE75B30052ABE6 /* iTunesManager.m in Sources */,
+				5C8D0F5D1AB36FBA00216BF3 /* SingDetail.m in Sources */,
 				92C21CB91AAE757A0052ABE6 /* AppDelegate.m in Sources */,
 				92C21CE81AAE858E0052ABE6 /* Filme.m in Sources */,
 				92C21CE11AAE76930052ABE6 /* TableViewCell.m in Sources */,

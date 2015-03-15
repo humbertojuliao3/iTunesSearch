@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TableViewController">
             <connections>
-                <outlet property="searchBar" destination="Y5a-YR-QUg" id="0d8-R6-Lb2"/>
+                <outlet property="searchBar" destination="LKW-br-c7h" id="jeI-0R-NLv"/>
                 <outlet property="tableview" destination="z24-IP-C1d" id="fiF-7d-ri3"/>
                 <outlet property="view" destination="z24-IP-C1d" id="NXu-VO-9o4"/>
             </connections>
@@ -16,19 +16,19 @@
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-            <searchBar key="tableHeaderView" contentMode="redraw" id="Y5a-YR-QUg">
+            <searchBar key="tableHeaderView" contentMode="redraw" id="LKW-br-c7h">
                 <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                 <textInputTraits key="textInputTraits"/>
                 <connections>
-                    <outlet property="delegate" destination="-1" id="Xp4-uG-hEZ"/>
+                    <outlet property="delegate" destination="-1" id="PVG-Em-KlI"/>
                 </connections>
             </searchBar>
             <connections>
                 <outlet property="dataSource" destination="-1" id="grn-Rq-4Ux"/>
                 <outlet property="delegate" destination="-1" id="M2x-yu-OMO"/>
             </connections>
-            <point key="canvasLocation" x="114" y="-297"/>
+            <point key="canvasLocation" x="112" y="-300"/>
         </tableView>
     </objects>
 </document>

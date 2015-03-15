@@ -10,9 +10,10 @@
 #import "TableViewCell.h"
 #import "iTunesManager.h"
 #import "Entidades/Filme.h"
+#import "CellDetailViewController.h"
 
 @interface TableViewController () {
-    NSArray *midias;
+    NSMutableArray *midias;
     NSMutableArray *sec1song;
     NSMutableArray *sec2movie;
     NSMutableArray *sec3tv;
@@ -80,6 +81,7 @@
 }
 #pragma mark - searchBar
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+    
     iTunesManager *itunes = [iTunesManager sharedInstance];
     midias = [itunes buscarMidias:searchBar.text];
     for (int i=0; i<[midias count]; i++) {
@@ -116,6 +118,7 @@
     //Filme *filme = [midias objectAtIndex:indexPath.row];
     //filmes = [[iTunesManager sharedInstance]buscarMidias:searchBar.text];
     [self.tableview reloadData];
+    [searchBar resignFirstResponder];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -125,14 +128,7 @@
 
 #pragma mark - Metodos do UITableViewDataSource
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-//    switch () {
-//        case <#constant#>:
-//            <#statements#>
-//            break;
-//            
-//        default:
-//            break;
-//    }
+
     return 4;
 }
 
@@ -181,26 +177,33 @@
     TableViewCell *celula = [self.tableview dequeueReusableCellWithIdentifier:@"celulaPadrao"];
     
 //    Filme *filme = [midias objectAtIndex:indexPath.row];
+    NSMutableArray* operador=[[NSMutableArray alloc] init];
+    midias = nil;
+    [operador addObjectsFromArray:sec1song];
+    [operador addObjectsFromArray:sec2movie];
+    [operador addObjectsFromArray:sec3tv];
+    [operador addObjectsFromArray:sec4podcast];
+    midias=operador;
     
     switch (indexPath.section) {
         case 0:
-            celula.nome.text =NSLocalizedString([[sec1song objectAtIndex:indexPath.row] nome],);
-            celula.tipo.text = NSLocalizedString([[sec1song objectAtIndex:indexPath.row] tipo],);
-            celula.genero.text = NSLocalizedString([[sec1song objectAtIndex:indexPath.row] genero],);
+            celula.nome.text =NSLocalizedString([[midias objectAtIndex:indexPath.row] nome],);
+            celula.tipo.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] tipo],);
+            celula.genero.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] genero],);
             break;
         case 1:
-            celula.nome.text =NSLocalizedString( [[sec2movie objectAtIndex:indexPath.row] nome],);
-            celula.tipo.text = NSLocalizedString([[sec2movie objectAtIndex:indexPath.row] tipo],);
-            celula.genero.text = NSLocalizedString([[sec2movie objectAtIndex:indexPath.row] genero],);
+            celula.nome.text =NSLocalizedString( [[midias objectAtIndex:indexPath.row] nome],);
+            celula.tipo.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] tipo],);
+            celula.genero.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] genero],);
             break;
         case 2:
-            celula.nome.text = NSLocalizedString([[sec3tv objectAtIndex:indexPath.row] nome],);
-            celula.tipo.text = NSLocalizedString([[sec3tv objectAtIndex:indexPath.row] tipo],);
-            celula.genero.text = NSLocalizedString([[sec3tv objectAtIndex:indexPath.row] genero],);            break;
+            celula.nome.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] nome],);
+            celula.tipo.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] tipo],);
+            celula.genero.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] genero],);            break;
         case 3:
-            celula.nome.text = NSLocalizedString([[sec4podcast objectAtIndex:indexPath.row] nome],) ;
-            celula.tipo.text = NSLocalizedString([[sec4podcast objectAtIndex:indexPath.row] tipo],) ;
-            celula.genero.text =NSLocalizedString( [[sec4podcast objectAtIndex:indexPath.row] genero],);
+            celula.nome.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] nome],) ;
+            celula.tipo.text = NSLocalizedString([[midias objectAtIndex:indexPath.row] tipo],) ;
+            celula.genero.text =NSLocalizedString( [[midias objectAtIndex:indexPath.row] genero],);
             break;
         default:
             break;
@@ -213,10 +216,18 @@
     
     return celula;
 }
-
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    CellDetailViewController*detail =[[CellDetailViewController alloc] init];
+    Filme*item=[midias objectAtIndex:indexPath.row];
+    NSArray*part=[[NSArray alloc] initWithObjects:item.nome,item.artista,item.duracao,item.genero,item.pais,item.tipo, nil];
+    detail.item=part;
+    [self.navigationController pushViewController:detail animated:YES];
+    
+}
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return 120;
 }
+
 
 
 @end

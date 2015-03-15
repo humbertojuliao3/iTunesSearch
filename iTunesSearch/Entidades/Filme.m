@@ -9,6 +9,6 @@
 #import "Filme.h"
 
 @implementation Filme
-@synthesize nome,trackId,artista,duracao,genero,pais,tipo;
+@synthesize nome,trackId,artista,duracao,genero,pais,tipo,imagem;
 
 @end
